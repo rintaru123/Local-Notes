@@ -2,6 +2,12 @@
 
 A secure, offline-first note-taking application that runs everywhere. Available as a portable **HTML file** for web browsers and as a **Desktop Application** for Windows (Electron).
 
+Main form
+![Main form](screenshots/1.png)
+Notes
+![Notes](screenshots/2.png)
+Matrix mode
+![SMatrix mode](screenshots/3.png)
 ## Key Features
 
 *   **🔒 100% Offline & Private:** Your data never leaves your device. Notes are stored in local JSON files that you control.
