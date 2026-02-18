@@ -188,9 +188,13 @@ export function App() {
       return;
     }
 
+    const now = new Date();
+    // Format: YYYY-MM-DD HH:mm
+    const dateTitle = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
     const newNote: Note = {
       id: uuidv4(),
-      title: 'Untitled Note',
+      title: dateTitle,
       content: '',
       createdAt: Date.now(),
       updatedAt: Date.now(),
@@ -353,7 +357,7 @@ export function App() {
   };
 
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-background text-foreground transition-colors duration-200">
+    <div className="flex h-[100dvh] w-full overflow-hidden bg-background text-foreground transition-colors duration-200">
       <div className={cn("flex h-full w-full flex-col md:w-80 shrink-0", activeNoteId ? "hidden md:flex" : "flex")}>
         <Sidebar
           notes={notes}

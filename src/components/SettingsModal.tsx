@@ -26,8 +26,8 @@ export function SettingsModal({ isOpen, onClose, settings, onSave }: SettingsMod
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
-      <div className="w-full max-w-md rounded-xl bg-card p-6 shadow-2xl transition-colors duration-200 border border-border">
-        <div className="flex items-center justify-between mb-6">
+      <div className="w-full max-w-md max-h-[85vh] overflow-y-auto rounded-xl bg-card p-6 shadow-2xl transition-colors duration-200 border border-border flex flex-col">
+        <div className="flex items-center justify-between mb-6 shrink-0">
           <h2 className="text-xl font-bold text-foreground">Settings</h2>
           <button onClick={onClose} className="rounded-full p-1 hover:bg-secondary text-muted-foreground hover:text-foreground">
             <X className="h-5 w-5" />

@@ -44,7 +44,7 @@ export function Sidebar({
 
   return (
     <div className="flex h-full w-full flex-col border-r border-border bg-secondary md:w-80 transition-colors duration-200">
-      <div className="flex flex-col gap-4 p-4 border-b border-border">
+      <div className="flex flex-col gap-4 p-4 border-b border-border shrink-0">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
             <FileText className="w-6 h-6 text-primary" />
@@ -109,7 +109,7 @@ export function Sidebar({
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-2">
+      <div className="flex-1 overflow-y-auto p-2 min-h-0">
         {filteredNotes.length === 0 ? (
           <div className="flex h-full flex-col items-center justify-center text-muted-foreground">
             <p className="text-sm">No notes found</p>
@@ -153,7 +153,7 @@ export function Sidebar({
         )}
       </div>
       
-      <div className="border-t border-border p-3 bg-secondary flex flex-col gap-1">
+      <div className="border-t border-border p-3 bg-secondary flex flex-col gap-1 shrink-0">
         <button
             onClick={() => {
                 const zip = new JSZip();

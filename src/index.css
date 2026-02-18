@@ -131,6 +131,7 @@
   --ring: #00ff00;
   
   --font-editor: "Courier New", monospace;
+  font-family: "Courier New", monospace;
   
   /* Make sure scrollbars match */
   color-scheme: dark;
