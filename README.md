@@ -1,5 +1,7 @@
 # Local Notes App
 
+[Online Local notes](https://rintaru123.github.io/Local-Notes/)
+
 A secure, offline-first note-taking application that runs everywhere. Available as a portable **HTML file** for web browsers and as a **Desktop Application** for Windows (Electron).
 
 Main form
